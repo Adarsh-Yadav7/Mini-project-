@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Listings</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Job Listings</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#contact">Contact Us</a>
+        </nav>
+    </header>
+
+    <section id="job-page">
+        <h2>Browse Jobs</h2>
+        <div class="job-list">
+            <div class="job-card" onclick="applyForJob('Software Engineer')">
+                <h3>Software Engineer</h3>
+                <p>Location: San Francisco, CA</p>
+                <p>Salary: $120,000/year</p>
+                <button>Apply Now</button>
+            </div>
+            <div class="job-card" onclick="applyForJob('Product Manager')">
+                <h3>Product Manager</h3>
+                <p>Location: New York, NY</p>
+                <p>Salary: $110,000/year</p>
+                <button>Apply Now</button>
+            </div>
+            <div class="job-card" onclick="applyForJob('UX Designer')">
+                <h3>UX Designer</h3>
+                <p>Location: Remote</p>
+                <p>Salary: $90,000/year</p>
+                <button>Apply Now</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Job Portal. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function applyForJob(jobTitle) {
+            alert(`You selected the ${jobTitle} position. Start your application now!`);
+        }
+    </script>
+</body>
+</html>
